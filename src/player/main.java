@@ -172,9 +172,7 @@ public class main extends javax.swing.JFrame {
     private void btnplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnplayActionPerformed
         // TODO add your handling code here:
         
-        reproducircancion();
-        option.play
-        
+       
         
     }//GEN-LAST:event_btnplayActionPerformed
     
