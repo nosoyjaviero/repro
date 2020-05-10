@@ -25,6 +25,7 @@ public class Lista {
         first = null;
         last = null;
         size = 0;
+       
     }
     //este método es para verificar si lista está vacía
     public boolean isEmpty(){
@@ -34,22 +35,16 @@ public class Lista {
         return false;    
         }
     }
-    
-    public void insertMusic(String name, String direction){
-        Nodo n = new Nodo (name,direction);
-        if (first == null){
-            first = n;
-            first.next = first;
-            n.before = last;
-            last = n;
-        }else{
-            last.next = n;
-            n.next = first;
-            n.before = last;
-            last = n;
-            first.before = last;
-        }
-        size++;
+    public void agegaralfinal (  String f){
+        
+        
+   if (isEmpty()){ 
+       
+       last= new Nodo(f,null,last);
+           last.before.next=last;
+   } else{
+       first=last= new Nodo(f); 
+   }
     }
     
     public int size(){

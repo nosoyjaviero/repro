@@ -10,44 +10,37 @@ package player;
  * @author Javier
  */
 public class Nodo {
-    
-    private String name;
+
     private String direction;
     public Nodo next;
     public Nodo before;
 
     public Nodo() {
-        this.name = "No se ha definido";
+      
         this.direction = "No se ha definido";
         this.next = null;
         this.before = null;
     }
+    public Nodo (String direction){
+    this(direction,null,null);
+    }
 
-    public Nodo(Nodo next, Nodo before, String name, String direction) {
-        this.name = name;
+    public Nodo(String direction,Nodo next, Nodo before ) {
+        
         this.direction = direction;
         this.next = next;
         this.before = before;
     }
-
-    Nodo(String name, String direction) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
+//    Nodo(String name, String direction) {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
 
 
     /**
      * @return the name
      */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * @param name the name to set
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
+ 
 
     /**
      * @return the direction
